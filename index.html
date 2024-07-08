@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/base.css">
+  <title>PickBazar</title>
+</head>
+<body>
+  <header >
+    <div class="header">
+      <div class="header__navbar container">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-list-item">
+            <img src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2295%2FLogo-new.png&w=1920&q=75" alt="logo" class="logo">
+          </li>
+          <li class="header__navbar-list-item header__navbar-list-item__category-picker">
+            <input type="checkbox" hidden id="category-picker-checker">
+            <label for="category-picker-checker" class="category-picker text">
+              <i class="category-picker__icon-apple fa-solid fa-apple-whole"></i>
+              <span class="category-picker-text">Grocery</span>
+              <i class="category-picker__icon-select-down fa-solid fa-caret-down"></i>
+              <i class="category-picker__icon-select-up fa-solid fa-caret-up"></i>
+            </label>
+            <div class="header__navbar-list-item__category">
+              <ul class="header__navbar-category-list">
+                <li class="header__navbar-category-item">
+                  <div class="header__navbar-category-item__icon">
+                    <i class="fa-solid fa-carrot"></i>
+                  </div>
+                  <span class="header__navbar-category-item__text">Grocery</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-bread-slice"></i>
+                  <span class="header__navbar-category-item__text">Bakery</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-music"></i>
+                  <span class="header__navbar-category-item__text">Makeup</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-ghost"></i>
+                  <span class="header__navbar-category-item__text">Bags</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-gear"></i>
+                  <span class="header__navbar-category-item__text">Clothing</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-lock"></i>
+                  <span class="header__navbar-category-item__text">Furniture</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-fire"></i>
+                  <span class="header__navbar-category-item__text">Daily Needs</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-plane"></i>
+                  <span class="header__navbar-category-item__text">Books</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-thumbs-up"></i>
+                  <span class="header__navbar-category-item__text">Gadget</span>
+                </li>
+                <li class="header__navbar-category-item">
+                  <i class="header__navbar-category-item__icon fa-solid fa-ticket"></i>
+                  <span class="header__navbar-category-item__text">Medicine</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="header__navbar-list">
+          <li class="header__navbar-list-item header__navbar-list-item-nav">
+            <span><a class="text shop" href="">Shops</a></span>
+            <span><a class="text offers" href="">Offers</a></span>
+            <span><a class="text contact" href="">Contact</a></span>
+          </li>
+          <li class="header__navbar-list-item header__navbar-list-item-pages">
+            <div class="pages">Pages</div>
+            <i class="header__navbar-list-item-pages__icon fa-solid fa-chevron-down"></i>
+            <div class="page__menu">
+              <ul class="page__menu-list">
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Flash Sale</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Manufactures/Publishers</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Authors</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">FAQ</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Terms & Conditions</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Customer Refund Policy</span>
+                </li>
+                <li class="page__menu-item">
+                  <span class="page__menu-item-text">Vendor Refund Policy</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__navbar-list-item header__navbar-list-item-btn">
+            <div class="btn header__navbar-list-item__btn-join">Join</div>
+            <div class="btn header__navbar-list-item__btn-become">Become a Seller</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+
+    </div>
+  </header>
+</body>
+</html>

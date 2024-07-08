@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #009f7f;
+  --white-color: #fff;
+  --text-color: #626973;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1455px;
+  margin: 0 auto;
+}
+
+
+/* animation */
+@keyframes regular {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
