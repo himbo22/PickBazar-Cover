@@ -3,6 +3,9 @@
   background-color: var(--white-color);
   height: 84px;
   z-index: 1;
+  display: flex;
+  position: relative;
+  margin: 0 20px;
 }
 
 .header__navbar {
@@ -17,18 +20,23 @@
   display: flex;
   align-items: center;
   gap: 40px ;
-}
-
-
-.header__navbar-list {
   font-size: 1.6rem;
 }
+
 
 .header__navbar-list-item {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   z-index: 1;
+}
+
+.mobile__navbar {
+  position: absolute;
+  display: none;
+}
+
+.mobile__navbar-icon {
 }
 
 .category-picker {
@@ -74,6 +82,7 @@
 
 .logo {
   z-index: 1;
+  width: 138px;
 }
 
 .header__navbar-list-item__category-picker {

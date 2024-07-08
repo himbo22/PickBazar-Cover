@@ -9,11 +9,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="script.js"></script>
   <title>PickBazar</title>
 </head>
 <body>
-  <header>
+  <header class="app__header">
     <input type="checkbox" hidden id="category-picker-checker">
     <div class="header">
       <label for="category-picker-checker" class="">
@@ -77,6 +78,9 @@
                 </li>
               </ul>
             </div>
+          </li>
+          <li class="mobile__navbar header__navbar-list-item">
+            <i class="mobile__navbar-icon fa-solid fa-bars"></i>
           </li>
         </ul>
         <ul class="header__navbar-list">
