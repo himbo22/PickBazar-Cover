@@ -9,18 +9,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/base.css">
+  <script src="script.js"></script>
   <title>PickBazar</title>
 </head>
 <body>
-  <header >
+  <header>
+    <input type="checkbox" hidden id="category-picker-checker">
     <div class="header">
+      <label for="category-picker-checker" class="">
+        <div class="header-checker"></div>
+      </label>
       <div class="header__navbar container">
         <ul class="header__navbar-list">
           <li class="header__navbar-list-item">
-            <img src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2295%2FLogo-new.png&w=1920&q=75" alt="logo" class="logo">
+            <a href="">
+              <img src="https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F2295%2FLogo-new.png&w=1920&q=75" alt="logo" class="logo">
+            </a>
           </li>
           <li class="header__navbar-list-item header__navbar-list-item__category-picker">
-            <input type="checkbox" hidden id="category-picker-checker">
             <label for="category-picker-checker" class="category-picker text">
               <i class="category-picker__icon-apple fa-solid fa-apple-whole"></i>
               <span class="category-picker-text">Grocery</span>
@@ -30,9 +36,7 @@
             <div class="header__navbar-list-item__category">
               <ul class="header__navbar-category-list">
                 <li class="header__navbar-category-item">
-                  <div class="header__navbar-category-item__icon">
-                    <i class="fa-solid fa-carrot"></i>
-                  </div>
+                  <i class="fa-solid fa-carrot"></i>
                   <span class="header__navbar-category-item__text">Grocery</span>
                 </li>
                 <li class="header__navbar-category-item">
@@ -82,43 +86,40 @@
             <span><a class="text contact" href="">Contact</a></span>
           </li>
           <li class="header__navbar-list-item header__navbar-list-item-pages">
-            <div class="pages">Pages</div>
+            <label class="pages">Pages</label>
             <i class="header__navbar-list-item-pages__icon fa-solid fa-chevron-down"></i>
             <div class="page__menu">
               <ul class="page__menu-list">
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Flash Sale</span>
+                  <a href="" class="page__menu-item-text">Flash Sale</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Manufactures/Publishers</span>
+                  <a href="" class="page__menu-item-text">Manufactures/Publishers</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Authors</span>
+                  <a href="" class="page__menu-item-text">Authors</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">FAQ</span>
+                  <a href="" class="page__menu-item-text">FAQ</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Terms & Conditions</span>
+                  <a href="" class="page__menu-item-text">Terms & Conditions</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Customer Refund Policy</span>
+                  <a href="" class="page__menu-item-text">Customer Refund Policy</a >
                 </li>
                 <li class="page__menu-item">
-                  <span class="page__menu-item-text">Vendor Refund Policy</span>
+                  <a href="" class="page__menu-item-text">Vendor Refund Policy</a >
                 </li>
               </ul>
             </div>
           </li>
           <li class="header__navbar-list-item header__navbar-list-item-btn">
-            <div class="btn header__navbar-list-item__btn-join">Join</div>
+            <div class="btn header__navbar-list-item__btn-join" onclick="cac()">Join</div>
             <div class="btn header__navbar-list-item__btn-become">Become a Seller</div>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="content">
-
     </div>
   </header>
 </body>
