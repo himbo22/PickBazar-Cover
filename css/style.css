@@ -1,7 +1,7 @@
 /* header */
 .header {
   background-color: var(--white-color);
-  height: 84px;
+  height: var(--header-height);
   z-index: 1;
   display: flex;
   position: relative;
@@ -260,3 +260,67 @@
   background-color: #009174;
 }
 
+/* app content */
+.app__content {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  background-image: url('https://pickbazar-react-rest.vercel.app/_next/image?url=https%3A%2F%2Fpickbazarlaravel.s3.ap-southeast-1.amazonaws.com%2F904%2Fgrocery.png&w=1920&q=75');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.app__content-main-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__content-main-screen h1 {
+  font-size: 5rem;
+}
+
+.app__content-main-screen span {
+  font-size: 1.8rem;
+  margin: 50px 0;
+}
+
+.app__content--search {
+  display: flex;
+  background-color: var(--white-color);
+  border-radius: 5px;
+}
+
+.app__content--search div {
+  background-color: var(--primary-color);
+  width: 143px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--white-color);
+  font-size: 1.6rem;
+}
+
+.app__content--search input {
+  width: 630px;
+  padding: 8px 56px 8px 24px;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 0.5px solid transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-color: transparent;
+  height: 38px;
+  box-sizing: content-box;
+  outline: none;
+}
+
+.app__content--search input:focus {
+  /* outline-color: var(--primary-color); */
+  border-color: var(--primary-color);
+}
